@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn src/server.ts",
+    "dev": "ts-node-dev --respawn src/api.ts",
     "start": "node dist/server.js",
     "build": "tsc",
     "test": "jest",
@@ -14,16 +14,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
+  "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.1.0",
+    "sequelize-cli": "^6.6.3",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@sequelize/core": "^7.0.0-alpha.46",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mysql2": "^3.14.3",
     "reflect-metadata": "^0.2.2",
     "sequelize": "^6.37.7",
-    "sequelize-typescript": "^2.1.6",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "sequelize-typescript": "^2.1.6"
   }
 }
